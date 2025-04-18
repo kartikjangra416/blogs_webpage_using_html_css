@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.container
+{
+    max-width: 95vw;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    
+}
+.header{
+    margin-bottom: 2.8rem;
+}
+a{
+    text-decoration: none;
+}
+
+h1{
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+.header p{
+    text-align: center;
+    max-width: 468px;
+    color: rgb(62, 60, 60);
+    margin: 0 auto;
+}
+.card{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(1,1fr);
+    width: 70vw;
+    margin: 0 auto;
+}
+
+@media (min-width: 650px){
+    .card{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
+@media (min-width: 1080px){
+    .card{
+        grid-template-columns: repeat(3,1fr);
+    }
+    
+}
+@media (min-width: 1340px){
+    .card{
+        grid-template-columns: repeat(4,1fr);
+    }
+    
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(101, 97, 97);
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+.cards a{
+    position: relative;
+    overflow: hidden;
+    height: 11rem;
+}
+@media (min-width: 650px){
+    .cards a{
+        height: 16rem;
+    }
+    
+}
+.cards img{
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.footer img{
+    position: static;
+    height: 2.5rem;
+    width: 2.5rem;
+    border:1px solid rgb(111, 104, 104);
+    border-radius: 50%;
+    box-shadow:  0 0 10px #000000;
+}
+.cardtitlecontainer{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+.cards:hover .cardimage {
+    transform: scale(1.1);
+    transition-duration: 200ms;
+    
+}
+
+.cardtitlecontainer h2{
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(24, 23, 23);
+    line-height: 1.5rem;
+    margin-bottom: 0.3rem;
+}
+
+h2:hover{
+    color:rgb(70, 43, 226);
+}
+.cardtitlecontainer p{
+    font-size: 1    rem;
+    color: rgb(62, 60, 60);
+    line-height: 1.2rem;
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.right p{
+    color: rgb(127, 127, 127);
+    
+}
+.right{padding: 1rem;}
